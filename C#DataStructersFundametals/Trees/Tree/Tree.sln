@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree", "Tree\Tree.csproj", "{74B16C9C-DF47-4036-8728-412D66ED4F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnTree", "OwnTree\OwnTree.csproj", "{40A11E05-06CA-4A4D-9E42-EDA5AA84280F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraySimetric", "ArraySimetric\ArraySimetric.csproj", "{D59A5E68-6460-41C8-93D0-88FB3A756D33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B16C9C-DF47-4036-8728-412D66ED4F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B16C9C-DF47-4036-8728-412D66ED4F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B16C9C-DF47-4036-8728-412D66ED4F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B16C9C-DF47-4036-8728-412D66ED4F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A11E05-06CA-4A4D-9E42-EDA5AA84280F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A11E05-06CA-4A4D-9E42-EDA5AA84280F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A11E05-06CA-4A4D-9E42-EDA5AA84280F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A11E05-06CA-4A4D-9E42-EDA5AA84280F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D59A5E68-6460-41C8-93D0-88FB3A756D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D59A5E68-6460-41C8-93D0-88FB3A756D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D59A5E68-6460-41C8-93D0-88FB3A756D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D59A5E68-6460-41C8-93D0-88FB3A756D33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E5C60F4-36ED-42E8-B42B-A6C59516010F}
+	EndGlobalSection
+EndGlobal
