@@ -47,41 +47,44 @@
 
         public IEnumerable<Tree<int>> GetSubtreesWithGivenSum(int sum)
         {
-            var result=new List<Tree<int>>();
-            this.DfsSubtrees(this, sum,result);
-            return result;
+            var resulset=new List<Tree<int>>();
+            this.DfsSubtrees(this, sum,resulset);
+            return resulset;
         }
 
         private void DfsSubtrees(Tree<int> subtree, int sum, 
-             List<Tree<int>>result)
+             List<Tree<int>>resultset)
         {
             foreach (var child in subtree.Children)
             {
                 
-                DfsSubtrees(child, sum,result);
+                DfsSubtrees(child, sum,resultset);
             }
+            List<Tree<int>> result = (List<Tree<int>>)this.Bfs(subtree);
+            if (result.Select(t=>t.Key).ToList().Sum()== sum)
+            {
+                resultset.AddRange(result);
+            }
+
+
         }
 
-        private void Bfs(Tree<int> child, int sum
-            , List<List<Tree<int>>> result)
+        private IEnumerable<Tree<int>> Bfs(Tree<int> child)
         {
             Queue<Tree<int>>queue=new Queue<Tree<int>>();
             queue.Enqueue(child);
             List<Tree<int>>currentNodesValues=new List<Tree<int>>();
             while(queue.Count > 0)
             {
-                Tree<int>currentNode= queue.Peek();
-                currentNodesValues.Add(queue.Dequeue());
-                if (sum == currentNodesValues.Select(n=>n.Key).Sum())
-                {
-                  
-                }
+                Tree<int>currentNode= queue.Dequeue();
+                currentNodesValues.Add(currentNode);
                 foreach (var currSub in currentNode.Children)
                 {
                     queue.Enqueue(currSub);
                 }
 
             }
+            return currentNodesValues;
            
         }
     }
