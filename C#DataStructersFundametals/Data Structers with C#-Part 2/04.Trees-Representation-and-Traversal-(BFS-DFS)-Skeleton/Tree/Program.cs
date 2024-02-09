@@ -16,12 +16,14 @@
                 ,new Tree<int>(23),new Tree<int>(6))
                 );
            
-            Console.WriteLine(string.Join(",",tree.OrderBfs()));
-            Console.WriteLine(string.Join(",",tree.OrderDfs()));
-            tree.Swap(19, 14);
-            Console.WriteLine(string.Join(",", tree.OrderBfs()));
-            List<int>list=(List<int>)tree.GetLeafs();
-            Console.WriteLine(string.Join(" ",list));
+            //Console.WriteLine(string.Join(",",tree.OrderBfs()));
+            //Console.WriteLine(string.Join(",",tree.OrderDfs()));
+            //tree.Swap(19, 14);
+            //Console.WriteLine(string.Join(",", tree.OrderBfs()));
+            //List<int>list=(List<int>)tree.GetLeafs();
+            //Console.WriteLine(string.Join(" ",list));
+            var output=tree.PrintRecursiveTree();
+            Console.WriteLine(output);
 
         }
         

@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
 
     public class Tree<T> : IAbstractTree<T>
     {
@@ -14,28 +13,6 @@
         {
             this.value = value;
             this.children = new List<Tree<T>>();
-        }
-        public string PrintRecursiveTree()
-        {
-            StringBuilder stringBuilder=new StringBuilder();
-            int indent = 0;
-            this.DfsPrint(this, stringBuilder,indent);
-            return stringBuilder.ToString();
-
-        }
-
-        private void DfsPrint(Tree<T> node, StringBuilder stringBuilder,int indent)
-        {
-            stringBuilder.AppendLine(node.value.ToString())
-                .Append(new string(' ', indent));
-                
-            foreach (var currentNode in node.children)
-            {
-                this.DfsPrint(currentNode, stringBuilder, indent+2);
-            }
-
-
-
         }
 
         public Tree(T value, params Tree<T>[] children)
